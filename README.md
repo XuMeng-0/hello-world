@@ -6,7 +6,7 @@
 
 ### study git
 
-git 基础：远程仓库的使用
+Git 基础：远程仓库的使用
 
 1. 查看远程仓库概要信息  
    `git remote`  
@@ -26,6 +26,8 @@ git 基础：远程仓库的使用
 7. 移除某个远程仓库  
    `git remote remove <remote>`  
    `git remote rm <remote>`
+
+Git 分支 学习合并冲突
 
 ### study markdown
 
