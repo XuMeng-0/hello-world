@@ -1,7 +1,5 @@
 # hello-world
 
-## My first repository
-
 ### Study GitHub
 
 ### Study Git
