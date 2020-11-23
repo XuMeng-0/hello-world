@@ -1,10 +1,10 @@
 # hello-world
 
-### Study GitHub
+## Study GitHub
 
-### Study Git
+## Study Git
 
-#### Git 基础：远程仓库的使用
+### Git 基础：远程仓库的使用
 
 1. 查看远程仓库概要信息  
    `git remote`  
@@ -25,7 +25,7 @@
    `git remote remove <remote>`  
    `git remote rm <remote>`
 
-#### Git 分支
+### Git 分支
 
 分支基础
 
@@ -54,7 +54,21 @@
    命令：将当前分支变基到目标基底分支  
    `git rebase <target-branch>`
 
-### Study markdown
+### Git 工具
+
+1. 贮藏  
+   使用场景：希望切换到其他分支处理问题，又不想为当前的工作状态创建一次提交。  
+   命令：
+    - 贮藏当前状态  
+      `git stash push`
+    - 应用最近的贮藏  
+      `git stash applay`
+    - 移除贮藏  
+      `git stash drop`
+    - 应用并移除贮藏  
+      `git statsh pop`
+
+## Study markdown
 
 #### Markdown 标题
 
