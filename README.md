@@ -20,6 +20,14 @@
     - 查看某一项配置  
       `git config <key>`
 
+### Git 起步：帮助
+
+1. 查看 Git 命令的综合手册  
+   `git help <verb>`  
+   `git <verb> --help`
+2. 查看 Git 命令的简明参考  
+   `git <verb> -h`
+
 ### Git 基础：远程仓库的使用
 
 1. 查看远程仓库概要信息  
