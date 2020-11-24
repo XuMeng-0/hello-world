@@ -4,6 +4,22 @@
 
 ## Study Git
 
+### Git 起步：配置
+
+1. 三个配置文件
+
+    - `git config --system` `etc/gitconfig` 系统上每个用户及其仓库的通用配置
+    - `git config --global` `~/gitconfig` 当前用户及其所有仓库的通用配置
+    - `git config --local` `.git/gitconfig` 当前仓库的配置，生效条件：在某个仓库中
+
+2. 查看配置信息
+    - 查看所有配置:可能会看到重复变量，此时会使用最后一个配置  
+      `git config --list`
+    - 查看所有配置及其所在文件  
+      `git config --list --show-origin`
+    - 查看某一项配置  
+      `git config <key>`
+
 ### Git 基础：远程仓库的使用
 
 1. 查看远程仓库概要信息  
