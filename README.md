@@ -28,6 +28,21 @@
 2. 查看 Git 命令的简明参考  
    `git <verb> -h`
 
+### Git 基础：获取 Git 仓库
+
+1. 方式一：将尚未进行版本控制的本地目录转换为 Git 仓库
+
+    - 进入项目目录
+    - `git init` 它会创建 .git 子目录，其中的文件是 Git 仓库的骨干
+    - `git add <file-name>` 指定需要进行追踪的文件
+    - `git commit` 进行初始提交
+
+2. 方拾二：从其他服务器克隆一个已存在的 Git 仓库
+    - 克隆远程仓库  
+      `git clone <url>`
+    - 克隆远程仓库，并定义本地仓库名  
+      `git clone <url> <local-repository-name>`
+
 ### Git 基础：远程仓库的使用
 
 1. 查看远程仓库概要信息  
