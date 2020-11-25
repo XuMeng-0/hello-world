@@ -43,6 +43,47 @@
     - 克隆远程仓库，并定义本地仓库名  
       `git clone <url> <local-repository-name>`
 
+### Git 基础：记录每次更新到仓库
+
+1. 检查当前文件状态
+    - 详细 `git status`
+    - 简洁 `git status --short`
+    - 简洁 `git status -s`
+2. 跟踪新文件  
+   `git add <files>`
+    - 命令参数：文件或目录路径
+    - 目录的路径作为参数时，将递归地跟踪该目录下的所有文件
+3. 暂存已修改的文件  
+   `git add <files>`  
+   `git add ` 命令的功能
+    - 开始跟踪新文件
+    - 把已跟踪的文件放到暂存区
+    - 合并分支时，把有冲突的文件标记为已解决状态
+4. 忽略文件
+    - 用途：使无需纳入 Git 管理的文件不再出现在未跟踪文件列表
+    - 文件名: .gitignore
+    - 常见的需要忽略的文件：日志文件，编译过程中创建的临时文件
+5. 查看已暂存和未暂存的修改
+    - 查看未暂存文件的更新  
+      `git diff`
+    - 查看已暂存文件的更新  
+      `git diff --staged`  
+      `git diff --cached`
+6. 提交更新
+    - `git commit`
+    - `git commit -m <commit-message>`
+7. 跳过使用暂存区  
+   `git commit -a`
+8. 移除文件
+    - 从 Git 仓库和当前目录中删除指定文件  
+      `git rm <file-name>`
+    - 从 Git 仓库和当前目录中删除指定文件，该文件修改后尚未提交  
+      `git rm -f <file-name>`
+    - 从 Git 仓库中删除，但保留在当前工作目录中  
+      `git rm --cached <file-name>`
+9. 移动文件  
+   `git mv <file-from> <file-to>`
+
 ### Git 基础：远程仓库的使用
 
 1. 查看远程仓库概要信息  
