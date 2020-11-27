@@ -132,8 +132,9 @@
 4. 重命名某个远程仓库  
    `git remote rename <name-current> <name-new>`
 5. 从某个远程仓库中抓取与拉取  
-    `git fetch <remote>`  
-   注意：`git fetch` 命令只会将数据下载到本地仓库，而不会自动合并
+   `git fetch <remote>`
+    - `git fetch` 命令只会将数据下载到本地仓库，而不会自动合并
+    - 如果当前分支设置了跟踪远程分支，可以用 `git pull` 命令抓取后自动合并该远程分支到当前分支
 6. 推送到某个远程仓库  
    `git push <remote> <branch>`
 7. 移除某个远程仓库  
