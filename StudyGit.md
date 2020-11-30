@@ -227,3 +227,10 @@
    `git stash drop`
 4. 应用并移除贮藏  
    `git statsh pop`
+
+## 查看某次历史提交的代码
+
+1. 找到目标提交
+
+2. 以该次提交为基础创建分支
+   `git checkout -b <branch-name> <commit-sha1>`
