@@ -238,3 +238,11 @@
 
 2. 以该次提交为基础创建分支
    `git checkout -b <branch-name> <commit-sha1>`
+
+## 分支合并错误 : 拒绝合并不相关的历史
+
+1. 背景：创建本地仓库，并为其添加远程仓库，合并远程仓库的分支。
+2. 提示信息：`fatal : refusing to merge unrelated histories`
+3. 问题原因：Git 认为当前分支和远程仓库的分支属于两个不同的仓库，拒绝合并。
+4. 解决方案：告诉 Git 允许合并不相关的历史。
+   - `git merge <remote/branch> --allow-unrelated-histories`
