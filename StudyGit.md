@@ -222,7 +222,7 @@
 1. 贮藏当前状态  
    `git stash push`
 2. 应用最近的贮藏  
-   `git stash applay`
+   `git stash apply`
 3. 移除贮藏  
    `git stash drop`
 4. 应用并移除贮藏  
