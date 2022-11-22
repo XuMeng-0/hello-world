@@ -145,6 +145,26 @@
    `git remote remove <remote>`  
    `git remote rm <remote>`
 
+### 打标签
+
+1. 可以给仓库历史中的某一个提交打上标签，以示重要，例如标记发布节点（v1.0、 v2.0 等）。
+2. 列出已有的标签  
+   `git tag`  
+3. 按照特定的模式查找标签, 例如   `git tag -l "v1.8.5*"`  
+   `git tag --list <tag-name>`  
+   `git tag -l <tag-name>`  
+4. 创建标签  
+   `git tag -a <tag-name> -m <tag-message>`  
+5. 查看标签和与之对应的提交信息  
+   `git show <tag-name>`
+6. 共享标签  
+   单个：`git push <remote> <tag-name>`  
+   全部：`git push <remote> --tags`
+7. 删除标签  
+   本地：`git tag -d <tag-name>`  
+   远程：`git push <remote> --delete <tag-name>`
+   
+
 ## Git 分支
 
 ### 分支基础
