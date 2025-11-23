@@ -244,13 +244,17 @@
 使用场景：希望切换到其他分支处理问题，又不想为当前的工作状态创建一次提交。
 
 1. 贮藏当前状态  
-   `git stash push`
+   - 基本用法  `git stash push`  
+   - 贮藏并命名  `git stash push -m <stash-name>`  
+   - 贮藏包含未跟踪文件  `git stash push -u`  
 2. 应用最近的贮藏  
    `git stash apply`
 3. 移除贮藏  
    `git stash drop`
 4. 应用并移除贮藏  
    `git statsh pop`
+5. 查看所有贮藏  
+   `git stash list`
 
 ## 查看某次历史提交的代码
 
