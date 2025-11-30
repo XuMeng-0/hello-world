@@ -114,14 +114,14 @@
 
 ### 撤销操作
 
-1. 漏掉文件，写错提交信息（已提交）  
-   `git commit --amend`
+1. 撤销对文件的修改（未暂存）  
+   `git checkout -- <file>`
 
 2. 取消暂存的文件（已暂存，未提交）  
    `git reset HEAD <file>`
 
-3. 撤销对文件的修改（未暂存）  
-   `git checkout -- <file>`
+3. 漏掉文件，写错提交信息（已提交，未推送）  
+   `git commit --amend`
 
 ### 远程仓库的使用
 
