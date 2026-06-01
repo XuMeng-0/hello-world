@@ -120,8 +120,8 @@
 2. 取消暂存的文件（已暂存，未提交）  
    `git reset HEAD <file>`
 
-3. 漏掉文件，写错提交信息（已提交，未推送）  
-   `git commit --amend`
+3.   
+   
 
 4. 撤销已经推送到远程仓库的提交
    - `git revert <commit-hash>` 创建一个提交，抵消目标提交的改动。
@@ -259,6 +259,15 @@
    `git statsh pop`
 5. 查看所有贮藏  
    `git stash list`
+
+## 重写历史
+
+### 修改最后一次提交
+
+1. 修改最后一次提交的提交信息  
+   `git commit --amend`
+2. 仅修改最后一次提交的内容，不修改提交信息  
+   `git commit --amend --no-edit`
 
 ## 查看某次历史提交的代码
 
