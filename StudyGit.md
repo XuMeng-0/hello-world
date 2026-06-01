@@ -120,8 +120,8 @@
 2. 取消暂存的文件（已暂存，未提交）  
    `git reset HEAD <file>`
 
-3.   
-   
+3. 撤销最后一个提交（已提交，未推送）  
+   `git reset --soft HEAD~`
 
 4. 撤销已经推送到远程仓库的提交
    - `git revert <commit-hash>` 创建一个提交，抵消目标提交的改动。
